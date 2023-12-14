@@ -19,92 +19,185 @@
     stored on that instance.
 */
 
-//CODE HERE
+class Employee {
+    constructor(name, shifts) {
+      this.name = name;
+      this.shifts = shifts;
+    }
+  
+    getSchedule() {
+      console.log(`${this.name} works on ${this.shifts}`);
+    }
+  }
+  
+  // Example usage:
+  const employee1 = new Employee("Danush Mekuria", "Monday and Wednesday");
+  employee1.getSchedule();
 
+  /*
+      Create a new instance of your class.
+      Save it to a variable called `empOne`.
+  
+      You can use this sample data or make
+      up your own:
+      name: "Jess"
+      shifts: "weekday mornings"
+  */
+  
 
+  // Create a new instance and save it to empOne
+  const empOne = new Employee("Danush Mekuria", "weekday mornings");
+  
+  // Call the getSchedule method on empOne
+  empOne.getSchedule();
 
-/*
-    Create a new instance of your class.
-    Save it to a variable called `empOne`.
+  
+  /*
+      Call the `getSchedule` method on the
+      `empOne` instance.
+  */
+  
+  // Define the Employee class
+    getSchedule();
+      console.log(`${this.name} works on ${this.shifts}`);
+  
 
-    You can use this sample data or make
-    up your own:
-    name: "Jess"
-    shifts: "weekday mornings"
-*/
+  
+  //////////////////PROBLEM 2////////////////////
+  /*  
+      Write a class called Manager that *extends* 
+      the Employee class. In the constructor, 
+      make sure you require all of the parameters 
+      from the Employee class as well as 1 
+      new one: employees, which will be an array of 
+      employee names that report to this manager. 
+      (Hint: don't forget to call the super function)
+  
+      Create a method called `getEmployees` that
+      console.logs a string:
+      [NAME] manages [EMPLOYEES]
+      Where NAME and EMPLOYEES reference the values
+      stored on that instance.
+  
+      Create a second method called `addEmployee`
+      that takes in one argument, `emp`, which
+      should be a string of an employee name.
+      The function should push the name into 
+      the employees array. 
+  */
 
-//CODE HERE
+    getSchedule;
+      console.log(`${this.name} works on ${this.shifts}`);
+  
+  
+  class Manager extends Employee {
+    constructor(name, shifts, employees) {
+      super(name, shifts);
+      this.employees = employees || [];
+    }
+  
+    getEmployees() {
+      console.log(`${this.name} manages ${this.employees.join(', ')}`);
+    }
+  
+    addEmployee(emp) {
+      this.employees.push(emp);
+    }
+  }
+  
+  // Example usage:
+  const manager1 = new Manager("Alice", "Monday to Friday", ["Bob", "Charlie"]);
+  manager1.getSchedule(); // Inherited method from Employee
+  manager1.getEmployees(); // New method from Manager
+  manager1.addEmployee("David");
+  manager1.getEmployees();
+  
+  /*
+      Create a new instance of your class.
+      Save it to a variable called `manager`.
+  
+      You can use this sample data or make
+      up your own:
+      name: Winston
+      shifts: "weekday afternoons"
+      employees: "Cece" and "Schmidt"
+  */
+    getSchedule();
+      console.log(`${this.name} works on ${this.shifts}`);
 
-/*
-    Call the `getSchedule` method on the
-    `empOne` instance.
-*/
+ 
+    getEmployees();
+      console.log(`${this.name} manages ${this.employees.join(', ')}`);
+    
+    addEmployee(emp);
+      this.employees.push(emp);
+  
+  // Example usage:
+  const manager = new Manager("Winston", "weekday afternoons", ["Cece", "Schmidt"]);
+  manager.getSchedule(); // Inherited method from Employee
+  manager.getEmployees(); // New method from Manager
+  
+  /*
+      Call the `getEmployees` method on the
+      `manager` variable.  
+  */
+  
+    getSchedule();
+      console.log(`${this.name} works on ${this.shifts}`);
+    
+    getEmployees();
+      console.log(`${this.name} manages ${this.employees.join(', ')}`);
 
-//CODE HERE
+    addEmployee(emp);
+      this.employees.push(emp);
 
+  
+  // Example usage:
+  manager.getSchedule(); // Inherited method from Employee
+  manager.getEmployees(); // New method from Manager
+  
+  
+  /*
+      Call the `addEmployee` method on the 
+      `manager` variable passing in the string 
+      'Coach' or whatever name you'd like.
+  */
+    getSchedule();
+      console.log(`${this.name} works on ${this.shifts}`);
+  
+  
+    getEmployees();
+      console.log(`${this.name} manages ${this.employees.join(', ')}`);
 
+  
+    addEmployee(emp);
+      this.employees.push(emp);
 
+  
+  // Example usage:
+  manager.getSchedule(); // Inherited method from Employee
+  manager.getEmployees(); // New method from Manager
+  manager.addEmployee("Coach"); // Calling addEmployee method
+  manager.getEmployees(); // Updated list of managed employees
+  
+  
+  /*
+      Call the `getEmployees` method on the
+      `manager` varible again to confirm 
+      that an employee was added.
+  */
+    getSchedule();
+      console.log(`${this.name} works on ${this.shifts}`);
 
-//////////////////PROBLEM 2////////////////////
-/*  
-    Write a class called Manager that *extends* 
-    the Employee class. In the constructor, 
-    make sure you require all of the parameters 
-    from the Employee class as well as 1 
-    new one: employees, which will be an array of 
-    employee names that report to this manager. 
-    (Hint: don't forget to call the super function)
+  
+    getEmployees();
+      console.log(`${this.name} manages ${this.employees.join(', ')}`);
+  
+    addEmployee(emp);
+      this.employees.push(emp);
 
-    Create a method called `getEmployees` that
-    console.logs a string:
-    [NAME] manages [EMPLOYEES]
-    Where NAME and EMPLOYEES reference the values
-    stored on that instance.
-
-    Create a second method called `addEmployee`
-    that takes in one argument, `emp`, which
-    should be a string of an employee name.
-    The function should push the name into 
-    the employees array. 
-*/
-
-//CODE HERE
-
-
-
-/*
-    Create a new instance of your class.
-    Save it to a variable called `manager`.
-
-    You can use this sample data or make
-    up your own:
-    name: Winston
-    shifts: "weekday afternoons"
-    employees: "Cece" and "Schmidt"
-*/
-
-//CODE HERE
-
-
-/*
-    Call the `getEmployees` method on the
-    `manager` variable.  
-*/
-
-//CODE HERE
-
-/*
-    Call the `addEmployee` method on the 
-    `manager` variable passing in the string 
-    'Coach' or whatever name you'd like.
-*/
-
-//CODE HERE 
-
-/*
-    Call the `getEmployees` method on the
-    `manager` varible again to confirm 
-    that an employee was added.
-*/
-
-//CODE HERE
+  // Example usage:
+  manager.getSchedule(); // Inherited method from Employee
+  manager.getEmployees(); // New method from Manager
+  manager.addEmployee("Coach"); // Calling addEmployee method
+  manager.getEmployees(); // Updated list of managed employees

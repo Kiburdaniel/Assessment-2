@@ -35,14 +35,10 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-//const numbers = [2, 4, 6];
+const calculatePrice = cart.reduce((preValue, currentValue)=>{return preValue + currentValue.price;}, 0);
+const totalPrice = calculatePrice;
 
-const sum = cart.reduce(function(sum, price) {
-  const Sum = sum + price;
-  return Sum;
-}, 0);
-console.log(Sum);
+console.log(totalPrice);
 
 
 
@@ -64,6 +60,11 @@ console.log(Sum);
 //CODE HERE
 
 
+function calcFinalPrice(totalPrice, couponValue, tax){
+    return  (totalPrice - couponValue)*tax + (totalPrice - couponValue);
+    console.log(calcFinalPrice);
+} 
+
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -84,6 +85,8 @@ console.log(Sum);
 
     Your object should have at least 4 properties. 
 */
+const person = {ID: "integer", firstName:"string", lastName:"string", age:"integer", address:"string"};
+//const person = {firstName:"John", lastName:"Doe", age:50, address:"123 abcd"};
 
 /*
     TEXT ANSWER HERE

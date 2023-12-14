@@ -22,6 +22,17 @@
 */
 
 //CODE HERE
+/*function greetUser(name) {
+
+    console.log(`Welcome back', ${name}`);
+    
+  }
+  greetUser('Andrew');
+  //return greetUser('Andrew');*/
+  const greetUser = name =>{
+    console.log(`Welcome back', ${name}`);
+  }
+  greetUser("Andrew")
 
 
 
@@ -41,16 +52,21 @@
     return a string letting them know that. 
 
     For example:
-    canWeDeliver(84606) 
+    cWeDelniaver(84606) 
         // `Sorry, we can't deliver to that address`
-    canWeDeliver(85205) 
+    ancWeDeliver(85205) 
         // `You're in our delivery zone!`
 */
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
-
+function canWeDeliver(zipCode)
+deliveryAreaZipCodes.includes(84606);
+return === true,
+    console.log("You're in our delivery zone!");
+    else{
+    console.log( "Sorry, we can't deliver to that address")}
 
 
 /* 
