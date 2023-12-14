@@ -36,6 +36,14 @@ const cart = [
 //CODE HERE
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
+//const numbers = [2, 4, 6];
+
+const sum = cart.reduce(function(sum, price) {
+  const Sum = sum + price;
+  return Sum;
+}, 0);
+console.log(Sum);
+
 
 
 //////////////////PROBLEM 2////////////////////
